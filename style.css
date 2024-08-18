@@ -1,0 +1,25 @@
+/* .newRows {
+    background-color: khaki;
+} */
+
+
+.initials2 {
+    align-items: center;
+    display: inline-block;
+    text-align: center;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    border: 1px solid #CAB99A;
+    cursor: pointer;
+    padding: 5px;
+    background:
+        url("../js/jquery/css/images/ui-bg_glass_75_e1d8c7_1x400.png") repeat-x scroll 50% 50% #DBD0BB;
+}
+
+.initials2:hover {
+    border: 1px solid #d17b00;
+    background:
+        url("../js/jquery/css/images/ui-bg_glass_75_f38f00_1x400.png") repeat-x scroll 50% 50% #DBD0BB;
+}

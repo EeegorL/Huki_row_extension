@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+   
+    "name": "Huki 20-22",
+    "version": "1.0",
+    "description": "Creates two additional rows to Huki-shift-management",
+   
+    "content_scripts": [{
+      "js": ["index.js"],
+      "css": ["style.css"],
+      "run_at": "document_start",
+      "matches": ["https://huki.fi/*"]
+    }],
+
+    "icons": {"128": "huki_rsz.png"}
+   
+  }
