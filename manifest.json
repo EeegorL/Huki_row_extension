@@ -2,7 +2,7 @@
     "manifest_version": 3,
    
     "name": "Huki 20-22",
-    "version": "1.0",
+    "version": "1.1.1",
     "description": "Creates two additional rows to Huki-shift-management",
    
     "content_scripts": [{

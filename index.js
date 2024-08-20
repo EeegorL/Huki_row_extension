@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let cell of lastRow.children) {
             if (cell.firstChild) {
                 for (let child of cell.children) {
-                    console.log(child.classList.contains("vuoroHasNote"))
                     if (child.classList.contains("vuoroHasNote")) {
-
                         let personId = child.classList.item(2).split("-")[2];
                         let personFullName = child.title.split("00")[2].split("\r")[0].slice(1);
 
@@ -61,8 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ];
 
         for (let i = 0; i < 12; i++) {
-            let cell = document.createElement("td");
-            cell.rowSpan = "1";
+            let cell = document.createElement("th"); // in Huki, table headers cannot be doubleclicked to add person, unlike table data cells
+            cell.classList.add("hukiExtensionRow"); // removes the th-boldness
+            cell.rowSpan = "1"; // some default Huki-styling
             cell.width = "7%";
 
             let classListItems = [
@@ -80,8 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     p.classList.add("vv-henkilo-" + person.id);
                     p.classList.add("ui-corner-all");
                     p.classList.add("initials2");
-                    p.classList.add("vuoroHasNote");
-
 
                     p.setAttribute("onclick", `highlightSelected(${person.id})`);
 
